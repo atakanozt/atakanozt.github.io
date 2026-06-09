@@ -41,8 +41,8 @@
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Atakan Öztarak" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
+<meta name="description" content="Atakan Öztarak — Software Engineer and MSc Computer Science student at KIT, specializing in backend architectures, cloud-native infrastructure, and enterprise AI." />
+<meta property="og:description" content="Atakan Öztarak — Software Engineer and MSc Computer Science student at KIT, specializing in backend architectures, cloud-native infrastructure, and enterprise AI." />
 <link rel="canonical" href="https://atakanozt.github.io/" />
 <meta property="og:url" content="https://atakanozt.github.io/" />
 <meta property="og:site_name" content="Atakan Öztarak" />
@@ -50,7 +50,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Atakan Öztarak" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Atakan Öztarak","name":"Atakan Öztarak","sameAs":["https://github.com/atakanozt","https://www.linkedin.com/in/atakan-oztarak/"],"url":"https://atakanozt.github.io/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Atakan Öztarak — Software Engineer and MSc Computer Science student at KIT.","headline":"Atakan Öztarak","name":"Atakan Öztarak","sameAs":["https://github.com/atakanozt","https://www.linkedin.com/in/atakan-öztarak/"],"url":"https://atakanozt.github.io/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -303,7 +303,7 @@
     </li> <!-- .nav-item -->
     
     <li class="nav-item">
-      <a href="/about/" class="nav-link">
+      <a href="/#about" class="nav-link">
         <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i>
         
 
@@ -391,7 +391,7 @@
       
 
       
-      <a href="https://www.linkedin.com/in/atakan-oztarak/" aria-label="linkedin"
+      <a href="https://www.linkedin.com/in/atakan-öztarak/" aria-label="linkedin"
         
 
         
@@ -463,17 +463,218 @@
   <!-- core -->
   <div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4">
     <div class="post pl-1 pr-1 pl-md-2 pr-md-2">
-<div id="post-list">
-    <div class="card post-preview">
-      <div class="card-body">
-        <h1 class="card-title">No posts yet</h1>
-        <div class="card-text post-content">
-          <p>This blog is just getting started. Check back soon for writing on backend engineering, AI/LLM systems, and cloud-native infrastructure. In the meantime, learn more <a href="/about/">about me</a>.</p>
-        </div>
+<style>
+.pf-wrap{--pf-accent:#0a66c2;--pf-accent-soft:rgba(10,102,194,.10);--pf-line:rgba(0,0,0,.12);max-width:900px;margin:0 auto;}
+html[data-mode="dark"] .pf-wrap{--pf-accent:#5aa9ff;--pf-accent-soft:rgba(90,169,255,.16);--pf-line:rgba(255,255,255,.14);}
+.pf-hero{display:flex;gap:1.9rem;align-items:center;flex-wrap:wrap;padding:.5rem 0 1.2rem;}
+.pf-photo{width:172px;height:172px;border-radius:50%;object-fit:cover;object-position:center 28%;box-shadow:0 10px 34px rgba(0,0,0,.22);border:3px solid var(--pf-accent);flex:0 0 auto;}
+.pf-hero-text{flex:1 1 320px;min-width:270px;}
+.pf-name{font-size:2.35rem;font-weight:700;margin:0 0 .2rem;line-height:1.1;}
+.pf-role{color:var(--pf-accent);font-weight:600;font-size:1.05rem;margin:0 0 .85rem;letter-spacing:.3px;}
+.pf-intro{font-size:1.03rem;line-height:1.72;margin:0 0 1.15rem;}
+.pf-cta{display:flex;gap:.6rem;flex-wrap:wrap;}
+.pf-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .95rem;border-radius:999px;font-size:.92rem;font-weight:600;border:1px solid var(--pf-line);color:inherit;transition:all .2s ease;}
+.pf-btn:hover{border-color:var(--pf-accent);color:var(--pf-accent);transform:translateY(-2px);text-decoration:none;}
+.pf-btn-primary,.pf-btn-primary:hover{background:var(--pf-accent);border-color:var(--pf-accent);color:#fff;}
+.pf-btn-primary:hover{opacity:.92;}
+.pf-section{margin-top:2.7rem;}
+.pf-h2{font-size:1.5rem;font-weight:700;display:flex;align-items:center;gap:.7rem;margin-bottom:1.25rem;}
+.pf-h2::after{content:"";flex:1;height:1px;background:var(--pf-line);}
+.pf-timeline{position:relative;padding-left:1.4rem;}
+.pf-timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--pf-line);}
+.pf-job{position:relative;padding:0 0 1.5rem .4rem;}
+.pf-job::before{content:"";position:absolute;left:-1.4rem;top:.4rem;width:11px;height:11px;border-radius:50%;background:var(--pf-accent);box-shadow:0 0 0 4px var(--pf-accent-soft);}
+.pf-job h3{font-size:1.08rem;font-weight:700;margin:0;}
+.pf-job .pf-meta{color:var(--text-muted-color,#888);font-size:.88rem;margin:.15rem 0 .5rem;}
+.pf-job .pf-co{color:var(--pf-accent);font-weight:600;}
+.pf-job ul{margin:0;padding-left:1.1rem;}
+.pf-job li{margin:.22rem 0;line-height:1.55;}
+.pf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1rem;}
+.pf-card{padding:1.25rem 1.35rem;border-radius:14px;border:1px solid var(--pf-line);background:var(--card-bg,transparent);transition:transform .2s ease,box-shadow .2s ease;}
+.pf-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.14);}
+.pf-card h3{font-size:1.12rem;font-weight:700;margin:0 0 .15rem;}
+.pf-card .pf-meta{color:var(--text-muted-color,#888);font-size:.85rem;margin-bottom:.65rem;}
+.pf-card p{line-height:1.6;margin:0 0 .85rem;}
+.pf-links{display:flex;gap:1rem;flex-wrap:wrap;font-size:.9rem;font-weight:600;}
+.pf-links a{color:var(--pf-accent);}
+.pf-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.8rem;}
+.pf-tag{font-size:.78rem;padding:.25rem .65rem;border-radius:999px;background:var(--pf-accent-soft);color:var(--pf-accent);font-weight:600;}
+.pf-skillgroup{margin-bottom:1.1rem;}
+.pf-skillgroup h4{font-size:.82rem;font-weight:700;margin:0 0 .55rem;color:var(--text-muted-color,#888);text-transform:uppercase;letter-spacing:.6px;}
+.pf-chips{display:flex;flex-wrap:wrap;gap:.5rem;}
+.pf-chip{font-size:.9rem;padding:.4rem .85rem;border-radius:8px;border:1px solid var(--pf-line);}
+.pf-edu{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.7rem 0;border-bottom:1px solid var(--pf-line);}
+.pf-edu:last-child{border-bottom:none;}
+.pf-edu h3{font-size:1.05rem;margin:0;font-weight:700;}
+.pf-edu .pf-deg{color:var(--text-muted-color,#888);font-size:.9rem;}
+.pf-edu .pf-when{color:var(--text-muted-color,#888);font-size:.88rem;white-space:nowrap;}
+@media (max-width:576px){.pf-hero{flex-direction:column;text-align:center;}.pf-cta{justify-content:center;}.pf-photo{width:148px;height:148px;}.pf-name{font-size:2rem;}}
+</style>
+
+<div class="pf-wrap">
+
+  <section class="pf-hero">
+    <img class="pf-photo" src="/commons/atakan.jpeg" alt="Atakan Öztarak">
+    <div class="pf-hero-text">
+      <h1 class="pf-name">Atakan Öztarak</h1>
+      <p class="pf-role">Software Engineer · MSc Computer Science @ KIT</p>
+      <p class="pf-intro">I'm a software engineer who turns messy, hard problems into systems people can rely on. My path runs from Ankara to Karlsruhe &mdash; from ranking in the top 0.04% nationally and graduating with honors at <strong>METU</strong>, to pursuing my MSc and engineering enterprise AI at <strong>KIT</strong>. Along the way I've shipped backends serving a million POS terminals, multi-agent pipelines for genomics, and RAG systems for firmware delivery at IBM.</p>
+      <div class="pf-cta">
+        <a class="pf-btn pf-btn-primary" href="mailto:atakanoztara21@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a class="pf-btn" href="https://github.com/atakanozt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a class="pf-btn" href="https://www.linkedin.com/in/atakan-öztarak/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a class="pf-btn" href="/commons/papers/Atakan-Oztarak-CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> CV</a>
       </div>
     </div>
-  </div>
-  <!-- #post-list -->
+  </section>
+
+  <section id="about" class="pf-section">
+    <h2 class="pf-h2">About</h2>
+    <p>I have 3 years of software engineering experience specializing in backend architectures, cloud-native infrastructure, and enterprise AI. I enjoy building multi-agent systems, designing automated LLM indexing pipelines (RAG), and optimizing repository-scale code intelligence platforms. My work spans fintech, genomics, and firmware delivery &mdash; consistently focused on reliability, automation, and shipping things that hold up in production.</p>
+  </section>
+
+  <section class="pf-section">
+    <h2 class="pf-h2">Experience</h2>
+    <div class="pf-timeline">
+
+      <div class="pf-job">
+        <h3>Software Engineer (Werkstudent) — IBM Z Firmware Delivery</h3>
+        <div class="pf-meta"><span class="pf-co">IBM</span> · Mar 2026 – Present · Stuttgart, Germany</div>
+        <ul>
+          <li>Engineered an automated AI data pipeline to parse and index large-scale software repositories with LLMs via RAG.</li>
+          <li>Designed a multi-repository connection framework letting AI code editors trace dependencies across distributed codebases.</li>
+          <li>Architected semantic search and embedding strategies to optimize context-window usage, improving code generation and explanation precision.</li>
+          <li>Deployed and orchestrated the pipeline on Red Hat OpenShift with cloud-native automation for continuous syncs and vector DB updates.</li>
+        </ul>
+      </div>
+
+      <div class="pf-job">
+        <h3>Software Content Engineer (Werkstudent)</h3>
+        <div class="pf-meta"><span class="pf-co">Sliplane</span> · Jan 2026 – Feb 2026 · Karlsruhe, Germany</div>
+        <ul>
+          <li>Built a technical content strategy centered on Docker deployment and PaaS solutions, authoring high-performing tutorials and how-to guides.</li>
+        </ul>
+      </div>
+
+      <div class="pf-job">
+        <h3>Software Engineer II</h3>
+        <div class="pf-meta"><span class="pf-co">Lidya Genomics</span> · Sep 2024 – Oct 2025 · Ankara, Turkey</div>
+        <ul>
+          <li>Led a multi-agent pipeline for a genetic-traits knowledge base, cutting manual work by ~95% (LangGraph, LangChain, OpenAI APIs).</li>
+          <li>Built backend, frontend, and deployment features with Python, Django, DRF, React, PostgreSQL, Docker, and CI/CD.</li>
+          <li>Maintained a serverless worker structure on Kubernetes and developed bioinformatics pipelines (Ensembl VEP, ClinVar, GATK).</li>
+        </ul>
+      </div>
+
+      <div class="pf-job">
+        <h3>Software Engineer I</h3>
+        <div class="pf-meta"><span class="pf-co">Token Financial Technologies</span> · Jun 2023 – Sep 2024 · Ankara, Turkey</div>
+        <ul>
+          <li>Managed three critical projects administering 1M POS devices across Turkey (Django, DRF, React, Oracle, PostgreSQL, RabbitMQ, Docker, CI/CD).</li>
+          <li>Built a Django/React statistics app that improved company-wide insights — 3rd place in the intern competition.</li>
+        </ul>
+      </div>
+
+      <div class="pf-job">
+        <h3>Undergraduate Researcher — WiNSLab</h3>
+        <div class="pf-meta"><span class="pf-co">METU</span> · Feb 2024 – Jul 2024 · Ankara, Turkey</div>
+        <ul>
+          <li>Developed a dynamic transport-layer protocol in the Linux kernel — a mesh networking protocol over UDP for group topology session management.</li>
+        </ul>
+      </div>
+
+      <div class="pf-job">
+        <h3>Student Assistant — CENG240</h3>
+        <div class="pf-meta"><span class="pf-co">METU</span> · Jan 2023 – Jun 2023 · Ankara, Turkey</div>
+        <ul>
+          <li>Taught Python programming to engineering students across faculties and prepared instructional materials.</li>
+        </ul>
+      </div>
+
+      <div class="pf-job">
+        <h3>Software Engineer — Internship</h3>
+        <div class="pf-meta"><span class="pf-co">SNG Studios</span> · Aug 2022 – Nov 2022 · Ankara, Turkey</div>
+        <ul>
+          <li>Built a 2D card game from scratch in Unity and C#, refining gameplay mechanics through iterative testing.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pf-section">
+    <h2 class="pf-h2">Projects</h2>
+    <div class="pf-grid">
+
+      <div class="pf-card">
+        <h3>Mesh Transport Protocol (MTP)</h3>
+        <div class="pf-meta">Research Project · METU WiNSLab · 2024</div>
+        <div class="pf-tags"><span class="pf-tag">Linux Kernel</span><span class="pf-tag">UDP</span><span class="pf-tag">Mesh Networking</span></div>
+        <p>A new dynamic transport-layer protocol implemented in the Linux kernel: a UDP-based mesh networking protocol for group topology and session management, designed for network flexibility.</p>
+        <div class="pf-links">
+          <a href="/commons/papers/MTP-Session-Management.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+          <a href="/commons/papers/MTP-Poster.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-image"></i> Poster</a>
+        </div>
+      </div>
+
+      <div class="pf-card">
+        <h3>OCR-SEC</h3>
+        <div class="pf-meta">Senior Project · METU &amp; Duke University · 2024–2025</div>
+        <div class="pf-tags"><span class="pf-tag">OCR</span><span class="pf-tag">LLM</span><span class="pf-tag">Multi-agent</span></div>
+        <p>An end-to-end OCR-to-LLM pipeline that extracts structured financial data from large, multi-page scanned SEC reports — a high-accuracy, production-ready multi-agent system combining document processing and AI orchestration.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pf-section">
+    <h2 class="pf-h2">Skills</h2>
+    <div class="pf-skillgroup">
+      <h4>Languages</h4>
+      <div class="pf-chips"><span class="pf-chip">Python</span><span class="pf-chip">C++</span><span class="pf-chip">JavaScript</span></div>
+    </div>
+    <div class="pf-skillgroup">
+      <h4>Backend &amp; Frameworks</h4>
+      <div class="pf-chips"><span class="pf-chip">Django</span><span class="pf-chip">Django REST Framework</span><span class="pf-chip">React</span></div>
+    </div>
+    <div class="pf-skillgroup">
+      <h4>AI / LLM</h4>
+      <div class="pf-chips"><span class="pf-chip">LangGraph</span><span class="pf-chip">LangChain</span><span class="pf-chip">OpenAI APIs</span><span class="pf-chip">RAG</span></div>
+    </div>
+    <div class="pf-skillgroup">
+      <h4>Infrastructure &amp; Cloud</h4>
+      <div class="pf-chips"><span class="pf-chip">Docker</span><span class="pf-chip">Podman</span><span class="pf-chip">Kubernetes</span><span class="pf-chip">OpenShift</span><span class="pf-chip">Serverless</span><span class="pf-chip">CI/CD</span><span class="pf-chip">RabbitMQ</span></div>
+    </div>
+    <div class="pf-skillgroup">
+      <h4>Data</h4>
+      <div class="pf-chips"><span class="pf-chip">PostgreSQL</span><span class="pf-chip">Oracle</span></div>
+    </div>
+  </section>
+
+  <section class="pf-section">
+    <h2 class="pf-h2">Education</h2>
+    <div class="pf-edu">
+      <div>
+        <h3>Karlsruhe Institute of Technology (KIT)</h3>
+        <div class="pf-deg">MSc, Computer Science — Human-Centered Machine Intelligence, Telematics</div>
+      </div>
+      <div class="pf-when">Present · Karlsruhe, DE</div>
+    </div>
+    <div class="pf-edu">
+      <div>
+        <h3>Middle East Technical University (METU)</h3>
+        <div class="pf-deg">BSc, Computer Engineering — Graduated with Honors · Top 0.04% nationally</div>
+      </div>
+      <div class="pf-when">Ankara, TR</div>
+    </div>
+  </section>
+
+  <section class="pf-section">
+    <h2 class="pf-h2">Languages</h2>
+    <div class="pf-chips"><span class="pf-chip">English — C1 (IELTS 7.5)</span><span class="pf-chip">Turkish — Native</span></div>
+  </section>
+
+</div>
 
 </div>
   </div> <!-- #core-wrapper -->
